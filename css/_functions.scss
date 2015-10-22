@@ -1,0 +1,3 @@
+@function col-width($n) {
+  @return $n * (100% / 12);
+}

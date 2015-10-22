@@ -1,7 +1,175 @@
 @import "fonts";
 @import "variables";
+@import "functions";
 
 
 * {
   box-sizing: border-box;
+  font-family: $font-hairline;
+  vertical-align: top;
+  text-align: center;
+  font-size: 20px;
 }
+
+/* columns */
+
+
+[class*="col-"] {
+  float: left;
+  min-height: 1px;
+}
+
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: col-width($i);
+  }
+}
+
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.top {
+  background-image: url("../images/top-image.jpg");
+  background-size: 100%;
+  color: $my-white;
+  padding-bottom: 58.55%;
+  height: 0;
+  background-repeat: no-repeat;
+  max-height: 100px;
+
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.logo {
+  font-family: $font-styled;
+  font-size: 70px;
+  letter-spacing: .01em;
+  padding: 2%;
+
+  span {
+    color: $my-purple;
+  }
+}
+
+.row2 {
+  padding: 2%;
+  h4 {
+    font-size: 1.5rem;
+    padding-bottom: 1%;
+  }
+}
+
+.hexagon {
+  position: relative;
+
+  background-image: url("../images/shape-white.svg");
+  background-size: 85%;
+  background-position: center;
+  padding-bottom: 15%;
+  height: 0;
+  background-repeat: no-repeat;
+  //border: 1px solid black;
+  img {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    //top: 50px;
+    padding-top: 25%;
+    height: 60%;
+
+
+  }
+  div {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    padding-top: 63%;
+
+  }
+}
+
+.hexagon-small {
+  background-image: url("../images/shape-white.svg");
+  background-size: 75%;
+  background-position: center;
+  padding-bottom: 7%;
+  height: 0;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  img {
+    padding-top: 37%;
+
+  }
+}
+
+
+.sticky-menu {
+}
+
+.logo-small {
+  font-size: 24px;
+  padding: 2.5% 0;
+  text-align: left;
+  padding-left: 1%;
+}
+
+nav {
+  li {
+    display: inline-block;
+    float: right;
+    text-transform: uppercase;
+    padding: 5% 2.5%;
+    text-align: right;
+  }
+}
+
+
+.advantages {
+  width: 100%;
+  background-color: #eeeeee;
+  padding-bottom: 29%;
+  .text {
+    padding-top: 70%;
+    padding-bottom: 50%;
+  }
+  p {
+    font-size: .75rem;
+    margin: 15% 3%;
+    line-height: 2;
+  }
+}
+
+.hexagon-gray {
+  background-image: url("../images/icons/shape-gray.svg");
+  background-size: 60%;
+  background-position: center;
+  padding-bottom: 18%;
+  margin-top: 10%;
+  img {
+    height: 65%;
+  }
+
+}
+
+
+
