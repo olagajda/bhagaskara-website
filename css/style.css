@@ -506,4 +506,79 @@ nav li {
   right: 39%;
 }
 
+.contact-left {
+  padding-right: 2%;
+}
+.contact-left textarea,
+.contact-left input {
+  text-align: left;
+  padding-left: 3%;
+  width: 100%;
+  height: 4rem;
+  margin-bottom: 8%;
+  border: 1px solid #676767;
+  color: #676767;
+}
+.contact-left textarea:focus,
+.contact-left input:focus {
+  outline: 0;
+}
+.contact-left textarea {
+  max-width: 100%;
+  height: 12rem;
+  max-height: 12rem;
+  padding-top: 2%;
+}
+.contact-left input:last-of-type {
+  height: 60px;
+  width: 200px;
+  text-align: center;
+  vertical-align: bottom;
+  color: white;
+  background-color: #9f449b;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  align-self: flex-end;
+  margin-bottom: 10%;
+  float: left;
+}
+
+.contact-right {
+  padding-left: 2%;
+  font-family: "latoregular", sans-serif;
+}
+.contact-right p {
+  text-align: left;
+  margin-bottom: 10%;
+  line-height: 1.4rem;
+}
+.contact-right p:nth-of-type(2), .contact-right p:nth-of-type(3) {
+  font-size: 1.1rem;
+  font-family: "latobold", sans-serif;
+}
+.contact-right .social {
+  text-align: left;
+  border: 1px solid #676767;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin: 5% 5.5% 10% 0;
+}
+.contact-right .social p {
+  font-family: "latoregular", sans-serif;
+  font-size: 2rem;
+  position: absolute;
+  top: 20%;
+  left: 38%;
+}
+
+footer .logo {
+  font-size: 2.5rem;
+  margin: 5%;
+}
+
 /*# sourceMappingURL=style.css.map */
