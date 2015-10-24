@@ -222,21 +222,33 @@ nav li {
   height: 65%;
 }
 
+.our-title h2 {
+  font-family: "existencelight", sans-serif;
+  font-size: 2rem;
+  padding: 0.2%;
+  padding-bottom: 10%;
+  padding-top: 1.5%;
+}
+.our-title h2 span {
+  color: #9f449b;
+}
+.our-title .corner-left {
+  position: absolute;
+  left: 40%;
+  top: 7%;
+}
+.our-title .corner-right {
+  position: absolute;
+  right: 38%;
+  top: 0;
+}
+
 .about-us {
   padding-top: 10%;
   padding-bottom: 20%;
 }
 .about-us * {
   padding: 0.2%;
-}
-.about-us h2 {
-  font-family: "existencelight", sans-serif;
-  font-size: 2rem;
-  padding-bottom: 10%;
-  padding-top: 1.5%;
-}
-.about-us h2 span {
-  color: #9f449b;
 }
 .about-us p {
   text-align: left;
@@ -260,23 +272,13 @@ nav li {
   vertical-align: bottom;
   color: white;
   background-color: #9f449b;
-  border-radius: 15px;
+  border-radius: 7px;
   border: none;
   outline: none;
   align-self: flex-end;
 }
-.about-us .corner-left {
-  position: absolute;
-  left: 40%;
-  top: 7%;
-}
-.about-us .corner-right {
-  position: absolute;
-  right: 38%;
-  top: 0;
-}
 
-.divider1 {
+.divider {
   background-image: url("../images/divider1.jpg");
   background-size: 100%;
   color: white;
@@ -290,6 +292,10 @@ nav li {
   margin-top: 6%;
   margin-bottom: 2rem;
 }
+.hexagon-divider img {
+  padding-top: 30%;
+  height: 68%;
+}
 
 .divider h3 {
   font-size: 2rem;
@@ -297,32 +303,207 @@ nav li {
 
 .our-team {
   padding-top: 10%;
-  padding-bottom: 20%;
-}
-.our-team * {
-  padding: 0.2%;
-}
-.our-team h2 {
-  font-family: "existencelight", sans-serif;
-  font-size: 2rem;
-  padding-bottom: 10%;
-  padding-top: 1.5%;
-}
-.our-team h2 span {
-  color: #9f449b;
+  padding-bottom: 17%;
 }
 .our-team .corner-left {
-  position: absolute;
   left: 41%;
-  top: 20%;
 }
 .our-team .corner-right {
-  position: absolute;
   right: 41%;
-  top: 0;
 }
 .our-team .arrow {
   width: 30%;
+  padding-bottom: 45%;
+}
+
+.circle {
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  height: 14rem;
+  width: 14rem;
+  margin-left: 19%;
+}
+
+.person h3 {
+  padding-top: 10%;
+  padding-bottom: 4%;
+  text-transform: uppercase;
+  font-family: "latobold", sans-serif;
+}
+.person p {
+  font-family: "latoregular", sans-serif;
+  font-size: 0.75rem;
+}
+
+.our-skills {
+  padding-bottom: 10%;
+}
+.our-skills .corner-left {
+  left: 41%;
+  top: 12%;
+}
+.our-skills .corner-right {
+  right: 41%;
+}
+
+.skill {
+  position: relative;
+}
+.skill h3 {
+  margin-top: 4%;
+  text-transform: uppercase;
+  font-family: "latobold", sans-serif;
+  text-align: left;
+}
+.skill p {
+  text-align: right;
+  position: absolute;
+  top: 23%;
+  right: 0;
+}
+
+.margin-right {
+  float: right;
+}
+
+.skills-right {
+  float: right;
+  padding-left: 2%;
+}
+
+.skills-left {
+  padding-right: 2%;
+}
+
+.skill-chart {
+  height: 1rem;
+  background-color: #f0f0f0;
+  margin: 3% 0;
+}
+
+.skill-1 .skill-chart-yes {
+  width: 90%;
+  background-color: #9f449b;
+  height: 1rem;
+}
+
+.skill-2 .skill-chart-yes {
+  width: 75%;
+  background-color: #9f449b;
+  height: 1rem;
+}
+
+.skill-3 .skill-chart-yes {
+  width: 70%;
+  background-color: #9f449b;
+  height: 1rem;
+}
+
+.skill-4 .skill-chart-yes {
+  width: 85%;
+  background-color: #9f449b;
+  height: 1rem;
+}
+
+.quotes {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-color: #eeeeee;
+}
+.quotes h2 {
+  font-size: 2.5rem;
+  padding-bottom: 3%;
+}
+.quotes p {
+  font-size: .7rem;
+  margin-bottom: 38%;
+}
+.quotes .circle {
+  background-color: #676767;
+  width: 9rem;
+  height: 9rem;
+  margin-left: 44%;
+}
+
+.quote p {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  padding: 3% 0;
+}
+.quote h4 {
+  text-transform: uppercase;
+  padding-left: 35%;
+}
+
+.portfolio .container {
+  margin-top: 10%;
+}
+.portfolio .corner-left {
+  left: 39%;
+  top: 4%;
+}
+.portfolio .corner-right {
+  right: 39%;
+}
+.portfolio button {
+  width: 75px;
+  height: 30px;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid black;
+  background-color: white;
+  font-size: 1rem;
+  color: black;
+  margin: .6%;
+  margin-bottom: 6%;
+}
+
+.gallery .thumbnail {
+  background-color: #f0f0f0;
+  height: auto;
+  width: 90%;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 83%;
+  margin-left: 6%;
+}
+.gallery img {
+  position: absolute;
+  max-height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.gallery h4 {
+  font-size: 1.3rem;
+  padding-top: 4%;
+  padding-bottom: 1%;
+}
+.gallery p {
+  padding-bottom: 9%;
+}
+.gallery button {
+  height: 60px;
+  width: 200px;
+  text-align: center;
+  vertical-align: bottom;
+  color: white;
+  background-color: #9f449b;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  align-self: flex-end;
+  margin-bottom: 10%;
+}
+
+.contact .corner-left {
+  left: 38%;
+  top: 26%;
+}
+.contact .corner-right {
+  right: 39%;
 }
 
 /*# sourceMappingURL=style.css.map */
