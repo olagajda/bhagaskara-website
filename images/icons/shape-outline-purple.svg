@@ -3,15 +3,11 @@
     <style>
 
       .cls-2 {
-        fill: #ffffff;
-        stroke: #ccd0d2;
+        fill: #a957a5;
+        stroke: #a957a5;
         stroke-linejoin: round;
         stroke-width: 4px;
         fill-opacity: 0.1;
-      }
-
-      .cls-2:hover {
-      fill: red;
       }
     </style>
   </defs>

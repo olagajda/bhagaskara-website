@@ -3,12 +3,10 @@
     <style>
 
       .cls-2 {
-        fill: #ccd0d2;
+        fill: #9f449b;
       }
 
-      svg:hover {
-      fill: red
-      }
+
 
 
     </style>

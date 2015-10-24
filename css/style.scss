@@ -8,7 +8,7 @@
   font-family: $font-hairline;
   vertical-align: top;
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 /* columns */
@@ -39,7 +39,7 @@
   background-image: url("../images/top-image.jpg");
   background-size: 100%;
   color: $my-white;
-  padding-bottom: 56.55%;
+  padding-bottom: 55.55%;
   height: 0;
   background-repeat: no-repeat;
   max-height: 100px;
@@ -74,8 +74,10 @@
 
 .hexagon {
   position: relative;
-
   background-image: url("../images/shape-white.svg");
+  &:hover {
+    background-image: url("../images/icons/shape-purple.svg");
+  }
   background-size: 85%;
   background-position: center;
   padding-bottom: 15%;
@@ -161,6 +163,9 @@ nav {
 
 .hexagon-gray {
   background-image: url("../images/icons/shape-gray.svg");
+  &:hover {
+    background-image: url("../images/icons/shape-outline-purple2.svg");
+  }
   background-size: 60%;
   background-position: center;
   padding-bottom: 18%;
