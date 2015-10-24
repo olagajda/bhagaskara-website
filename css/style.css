@@ -107,7 +107,7 @@
   background-image: url("../images/top-image.jpg");
   background-size: 100%;
   color: white;
-  padding-bottom: 58.55%;
+  padding-bottom: 56.55%;
   height: 0;
   background-repeat: no-repeat;
   max-height: 100px;
@@ -199,7 +199,7 @@ nav li {
 .advantages {
   width: 100%;
   background-color: #eeeeee;
-  padding-bottom: 29%;
+  padding-bottom: 20%;
 }
 .advantages .text {
   padding-top: 70%;
@@ -220,6 +220,109 @@ nav li {
 }
 .hexagon-gray img {
   height: 65%;
+}
+
+.about-us {
+  padding-top: 10%;
+  padding-bottom: 20%;
+}
+.about-us * {
+  padding: 0.2%;
+}
+.about-us h2 {
+  font-family: "existencelight", sans-serif;
+  font-size: 2rem;
+  padding-bottom: 10%;
+  padding-top: 1.5%;
+}
+.about-us h2 span {
+  color: #9f449b;
+}
+.about-us p {
+  text-align: left;
+  line-height: 2;
+  color: black;
+  font-size: 0.9rem;
+  padding-bottom: 30%;
+}
+.about-us .content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-us img {
+  padding-right: 3%;
+}
+.about-us button {
+  height: 60px;
+  width: 200px;
+  text-align: center;
+  vertical-align: bottom;
+  color: white;
+  background-color: #9f449b;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  align-self: flex-end;
+}
+.about-us .corner-left {
+  position: absolute;
+  left: 40%;
+  top: 7%;
+}
+.about-us .corner-right {
+  position: absolute;
+  right: 38%;
+  top: 0;
+}
+
+.divider1 {
+  background-image: url("../images/divider1.jpg");
+  background-size: 100%;
+  color: white;
+  padding-bottom: 30.55%;
+  height: 0;
+  background-repeat: no-repeat;
+  max-height: 100px;
+}
+
+.hexagon-divider {
+  margin-top: 6%;
+  margin-bottom: 2rem;
+}
+
+.divider h3 {
+  font-size: 2rem;
+}
+
+.our-team {
+  padding-top: 10%;
+  padding-bottom: 20%;
+}
+.our-team * {
+  padding: 0.2%;
+}
+.our-team h2 {
+  font-family: "existencelight", sans-serif;
+  font-size: 2rem;
+  padding-bottom: 10%;
+  padding-top: 1.5%;
+}
+.our-team h2 span {
+  color: #9f449b;
+}
+.our-team .corner-left {
+  position: absolute;
+  left: 41%;
+  top: 20%;
+}
+.our-team .corner-right {
+  position: absolute;
+  right: 41%;
+  top: 0;
+}
+.our-team .arrow {
+  width: 30%;
 }
 
 /*# sourceMappingURL=style.css.map */
