@@ -51,8 +51,6 @@ var Application = function() {
         var lastPositionTop = 0;
         var menuHeight = menu.height();
 
-        console.log(paragraphs);
-        console.log(links);
 
         $(window).scroll(function (event) {
 
@@ -101,6 +99,38 @@ var Application = function() {
 
 
 
+function highlightPictureOnHover() {
+
+    var photo = $(".photo");
+
+    photo.on("mouseenter", function(event){
+
+        $(this).parent().find(".hover-plus").show(0);
+
+    });
+
+    photo.on("mouseleave", function(event){
+
+        $(this).parent().find(".hover-plus").hide(0);
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+
 
 
 
@@ -135,7 +165,8 @@ var Application = function() {
     return {
         init:init,
         changeImageOnHover:changeImageOnHover,
-        stickyMenu:stickyMenu
+        stickyMenu:stickyMenu,
+        highlightPictureOnHover:highlightPictureOnHover
     };
 
 };
@@ -151,6 +182,7 @@ $(function() {
     app.init();
     app.changeImageOnHover();
     app.stickyMenu();
+    app.highlightPictureOnHover();
 
 
 
