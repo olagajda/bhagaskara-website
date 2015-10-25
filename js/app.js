@@ -99,37 +99,39 @@ var Application = function() {
 
 
 
-function highlightPictureOnHover() {
+    function highlightPictureOnHover() {
 
-    var photo = $(".photo");
+        var photo = $(".photo");
 
-    photo.on("mouseenter", function(event){
+        photo.on("mouseenter", function(event){
 
-        $(this).parent().find(".hover-plus").show(0);
+            $(this).parent().find(".hover-plus").show(0);
 
-    });
+        });
 
-    photo.on("mouseleave", function(event){
+        photo.on("mouseleave", function(event){
 
-        $(this).parent().find(".hover-plus").hide(0);
+            $(this).parent().find(".hover-plus").hide(0);
 
-    });
+        });
 
-
-
-
+    }
 
 
+    function showMorePictures() {
+
+        var morePicsButton = $(".watch-more");
+
+        morePicsButton.on("click", function(event){
+
+
+            $(this).parent().find(".hidden").slideDown(500);
+            $(this).hide();
 
 
 
-
-
-
-
-
-
-};
+        });
+    }
 
 
 
@@ -166,7 +168,8 @@ function highlightPictureOnHover() {
         init:init,
         changeImageOnHover:changeImageOnHover,
         stickyMenu:stickyMenu,
-        highlightPictureOnHover:highlightPictureOnHover
+        highlightPictureOnHover:highlightPictureOnHover,
+        showMorePictures:showMorePictures
     };
 
 };
@@ -183,6 +186,7 @@ $(function() {
     app.changeImageOnHover();
     app.stickyMenu();
     app.highlightPictureOnHover();
+    app.showMorePictures();
 
 
 

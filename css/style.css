@@ -524,10 +524,17 @@ nav li:last-of-type {
   border: none;
   outline: none;
   align-self: flex-end;
-  margin-bottom: 10%;
   cursor: pointer;
+  margin-bottom: 0;
 }
 
+.hidden {
+  display: none;
+}
+
+.contact .our-title h2 {
+  margin-top: 10%;
+}
 .contact .corner-left {
   left: 38%;
   top: 26%;
