@@ -210,6 +210,61 @@ var Application = function() {
     }
 
 
+    function lightboxInit() {
+
+        lightbox.option({
+
+            "resizeDuration": 400,
+            "fadeDuration": 0,
+            "positionFromTop": 100
+
+        });
+
+    }
+
+    function teamSlider() {
+
+        $('.team-people').slick({
+
+            slidesToShow: 3,
+            prevArrow: $("#arrow-left"),
+            nextArrow: $("#arrow-right"),
+            infnite: true
+
+
+        });
+    }
+
+    function teamSkillsSlider() {
+
+        $(".team-skills-slider").slick({
+
+            prevArrow: $("#arrow-left"),
+            nextArrow: $("#arrow-right"),
+            infnite: true
+
+
+
+        });
+
+    }
+
+    function quotesSlider() {
+
+        $(".quotes-slider").slick({
+
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+
+
+
+
+        });
+
+    }
+
+
 
 
 
@@ -221,7 +276,13 @@ var Application = function() {
         highlightPictureOnHover:highlightPictureOnHover,
         showMorePictures:showMorePictures,
         filterPortfolio:filterPortfolio,
-        slidingToSection:slidingToSection
+        slidingToSection:slidingToSection,
+        lightboxInit:lightboxInit,
+        teamSlider:teamSlider,
+        teamSkillsSlider:teamSkillsSlider,
+        quotesSlider:quotesSlider
+
+
     };
 
 };
@@ -240,29 +301,10 @@ $(function() {
     app.showMorePictures();
     app.filterPortfolio();
     app.slidingToSection();
-
-
-    lightbox.option({
-
-        "resizeDuration": 400,
-        "fadeDuration": 0,
-        "positionFromTop": 100
-
-    });
-
-
-
-    $('.team-people').slick({
-
-        //slidesToShow: 3,
-
-        dots: true,
-        prevArrow: $("#arrow-left"),
-        nextArrow: $("#arrow-right")
-
-
-    });
-
+    app.lightboxInit();
+    app.teamSlider();
+    app.teamSkillsSlider();
+    app.quotesSlider();
 
 
 

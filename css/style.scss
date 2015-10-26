@@ -277,7 +277,7 @@ nav {
 
 .our-team {
   padding-top: 10%;
-  padding-bottom: 17%;
+  padding-bottom: 5%;
   .corner-left {
     left: 41%;
   }
@@ -362,34 +362,102 @@ nav {
   margin: 3% 0;
 }
 
-.skill-1 {
-  .skill-chart-yes {
-    width: 90%;
-    background-color: $my-purple;
-    height: 1rem;
+.person-1-skills {
+  .skill-1 {
+    .skill-chart-yes {
+      width: 90%;
+      background-color: $my-purple;
+      height: 1rem;
+    }
+  }
+  .skill-2 {
+    .skill-chart-yes {
+      width: 75%;
+      background-color: $my-purple;
+      height: 1rem;
+    }
+  }
+  .skill-3 {
+    .skill-chart-yes {
+      width: 70%;
+      background-color: $my-purple;
+      height: 1rem;
+    }
+  }
+  .skill-4 {
+    .skill-chart-yes {
+      width: 85%;
+      background-color: $my-purple;
+      height: 1rem;
+    }
   }
 }
-.skill-2 {
-  .skill-chart-yes {
-    width: 75%;
-    background-color: $my-purple;
-    height: 1rem;
+
+.person-2-skills {
+  .skill-1 {
+    .skill-chart-yes {
+      width: 50%;
+      background-color: $my-purple;
+      height: 1rem;
+    }
+  }
+  .skill-2 {
+    .skill-chart-yes {
+      width: 50%;
+      background-color: $my-purple;
+      height: 1rem;
+    }
+  }
+  .skill-3 {
+    .skill-chart-yes {
+      width: 50%;
+      background-color: $my-purple;
+      height: 1rem;
+    }
+  }
+  .skill-4 {
+    .skill-chart-yes {
+      width: 50%;
+      background-color: $my-purple;
+      height: 1rem;
+    }
   }
 }
-.skill-3 {
-  .skill-chart-yes {
-    width: 70%;
-    background-color: $my-purple;
-    height: 1rem;
+
+.person-3-skills {
+  .skill-1 {
+    .skill-chart-yes {
+      width: 20%;
+      background-color: $my-purple;
+      height: 1rem;
+    }
+  }
+  .skill-2 {
+    .skill-chart-yes {
+      width: 20%;
+      background-color: $my-purple;
+      height: 1rem;
+    }
+  }
+  .skill-3 {
+    .skill-chart-yes {
+      width: 20%;
+      background-color: $my-purple;
+      height: 1rem;
+    }
+  }
+  .skill-4 {
+    .skill-chart-yes {
+      width: 20%;
+      background-color: $my-purple;
+      height: 1rem;
+    }
   }
 }
-.skill-4 {
-  .skill-chart-yes {
-    width: 85%;
-    background-color: $my-purple;
-    height: 1rem;
-  }
-}
+
+
+
+
 
 .quotes {
   padding-top: 12%;

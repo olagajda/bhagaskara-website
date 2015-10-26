@@ -324,7 +324,7 @@ nav li:last-of-type {
 
 .our-team {
   padding-top: 10%;
-  padding-bottom: 17%;
+  padding-bottom: 5%;
 }
 .our-team .corner-left {
   left: 41%;
@@ -403,26 +403,65 @@ nav li:last-of-type {
   margin: 3% 0;
 }
 
-.skill-1 .skill-chart-yes {
+.person-1-skills .skill-1 .skill-chart-yes {
   width: 90%;
   background-color: #9f449b;
   height: 1rem;
 }
-
-.skill-2 .skill-chart-yes {
+.person-1-skills .skill-2 .skill-chart-yes {
   width: 75%;
   background-color: #9f449b;
   height: 1rem;
 }
-
-.skill-3 .skill-chart-yes {
+.person-1-skills .skill-3 .skill-chart-yes {
   width: 70%;
   background-color: #9f449b;
   height: 1rem;
 }
-
-.skill-4 .skill-chart-yes {
+.person-1-skills .skill-4 .skill-chart-yes {
   width: 85%;
+  background-color: #9f449b;
+  height: 1rem;
+}
+
+.person-2-skills .skill-1 .skill-chart-yes {
+  width: 50%;
+  background-color: #9f449b;
+  height: 1rem;
+}
+.person-2-skills .skill-2 .skill-chart-yes {
+  width: 50%;
+  background-color: #9f449b;
+  height: 1rem;
+}
+.person-2-skills .skill-3 .skill-chart-yes {
+  width: 50%;
+  background-color: #9f449b;
+  height: 1rem;
+}
+.person-2-skills .skill-4 .skill-chart-yes {
+  width: 50%;
+  background-color: #9f449b;
+  height: 1rem;
+}
+
+.person-3-skills .skill-1 .skill-chart-yes {
+  width: 20%;
+  background-color: #9f449b;
+  height: 1rem;
+}
+.person-3-skills .skill-2 .skill-chart-yes {
+  width: 20%;
+  background-color: #9f449b;
+  height: 1rem;
+}
+.person-3-skills .skill-3 .skill-chart-yes {
+  width: 20%;
+  background-color: #9f449b;
+  height: 1rem;
+}
+.person-3-skills .skill-4 .skill-chart-yes {
+  width: 20%;
   background-color: #9f449b;
   height: 1rem;
 }
