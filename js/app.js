@@ -45,7 +45,8 @@ var Application = function() {
         var paragraphs = $(".chapter");
         var links = $(".sticky-menu li");
         var lastPositionTop = 0;
-        var menuHeight = menu.height();
+        var emptyStripe = $(".empty-stripe");
+        var menuHeight = $("nav").height();
 
 
         $(window).scroll(function (event) {
@@ -55,11 +56,14 @@ var Application = function() {
 
                 lastPositionTop = menu.offset().top;
                 menu.addClass("sticky");
+                emptyStripe.css("height", menuHeight);
+                emptyStripe.show();
             }
 
             if (menu.hasClass("sticky") && (lastPositionTop > ($(this).scrollTop()))) {
 
                 menu.removeClass("sticky");
+                emptyStripe.hide();
             }
 
             paragraphs.each(function (index) {
@@ -294,6 +298,8 @@ var Application = function() {
 
 
 
+
+
     return {
         changeImageOnHover:changeImageOnHover,
         stickyMenu:stickyMenu,
@@ -305,7 +311,7 @@ var Application = function() {
         teamSlider:teamSlider,
         teamSkillsSlider:teamSkillsSlider,
         quotesSlider:quotesSlider,
-        validateEmail:validateEmail
+        validateEmail:validateEmail,
 
     };
 
