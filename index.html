@@ -7,8 +7,14 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+
 
     <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/slick.js"></script>
+
     <script src="js/app.js"></script>
 </head>
 <body>
@@ -195,27 +201,42 @@
         <div class="row ">
             <div class="col-5"></div>
             <div class="arrows col-2">
-                <img class="arrow arrow-left" src="images/icons/arrow-left.png">
-                <img class="arrow arrow-right" src="images/icons/arrow-right.png">
+                <img class="arrow arrow-left" id="arrow-left" src="images/icons/arrow-left.png">
+                <img class="arrow arrow-right" id="arrow-right" src="images/icons/arrow-right.png">
             </div>
         </div>
 
-        <div class="row">
-            <div class="person person-1 col-4">
-                <div class="circle"></div>
-                <h3>Anne Hathaway</h3>
-                <p>CEO/Marketing Guru</p>
+        <div class="row team-people" data-slick='{"slidesToShow": 3}'>
+
+            <div>
+                <div class="person person-1 ">
+                    <div class="circle"></div>
+                    <h3>Anne Hathaway</h3>
+                    <p>CEO/Marketing Guru</p>
+                </div>
+
             </div>
-            <div class="person person-2 col-4">
-                <div class="circle"></div>
-                <h3>Michael Douglas</h3>
-                <p>COO</p>
+
+            <div>
+
+
+                <div class="person person-2 ">
+                    <div class="circle"></div>
+                    <h3>Michael Douglas</h3>
+                    <p>COO</p>
+                </div>
             </div>
-            <div class="person person-3 col-4">
-                <div class="circle"></div>
-                <h3>Carrie Mathison</h3>
-                <p>Something else</p>
+
+            <div>
+
+                <div class="person person-3 ">
+                    <div class="circle"></div>
+                    <h3>Carrie Mathison</h3>
+                    <p>Something else</p>
+                </div>
             </div>
+
+
         </div>
 
 
@@ -467,9 +488,9 @@
                     <p>web</p>
                 </div>
 
-            </div>
 
-            <div class="hidden">
+
+
 
                 <div class="example col-4" data-filter="apps">
                     <div class="thumbnail">

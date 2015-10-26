@@ -335,6 +335,7 @@ nav li:last-of-type {
 .our-team .arrow {
   width: 30%;
   padding-bottom: 45%;
+  cursor: pointer;
 }
 
 .circle {

@@ -122,7 +122,7 @@ var Application = function() {
         morePicsButton.on("click", function(event){
 
 
-            $(this).parent().find(".hidden").slideDown(1000);
+            $(this).parent().find(".hidden").fadeIn(1000);
             $(this).hide();
 
 
@@ -248,7 +248,22 @@ $(function() {
         "fadeDuration": 0,
         "positionFromTop": 100
 
-    })
+    });
+
+
+
+    $('.team-people').slick({
+
+        //slidesToShow: 3,
+
+        dots: true,
+        prevArrow: $("#arrow-left"),
+        nextArrow: $("#arrow-right")
+
+
+    });
+
+
 
 
 
