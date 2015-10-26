@@ -143,8 +143,6 @@ var Application = function() {
             example.show();
             hidden.show();
 
-
-
             for (var i = 0; i < example.length; i++) {
 
 
@@ -153,30 +151,40 @@ var Application = function() {
                     example.show()
                 }
 
-
-
-
-
-
                 if (example.eq(i).data("filter") !== $(this).data("filter")) {
-
 
                     example.eq(i).hide();
 
-
                 }
-
             }
-
             $(".watch-more").hide()
-
-
-
-
-
         });
     }
 
+
+    function slidingToSection() {
+
+        var menu = $(".sticky-menu li");
+
+        menu.on("click", function(event){
+
+            var sectionToScroll = $("section");
+
+            for (var i = 0; i < sectionToScroll.length; i++) {
+
+                if (sectionToScroll.eq(i).data("scroll") === $(this).data("scroll")) {
+
+
+                        $('html, body').animate({
+                            scrollTop: sectionToScroll.eq(i).offset().top +1
+                        }, 1000);
+                }
+            }
+        });
+
+
+
+    }
 
 
 
@@ -189,7 +197,8 @@ var Application = function() {
         stickyMenu:stickyMenu,
         highlightPictureOnHover:highlightPictureOnHover,
         showMorePictures:showMorePictures,
-        filterPortfolio:filterPortfolio
+        filterPortfolio:filterPortfolio,
+        slidingToSection:slidingToSection
     };
 
 };
@@ -207,6 +216,7 @@ $(function() {
     app.highlightPictureOnHover();
     app.showMorePictures();
     app.filterPortfolio();
+    app.slidingToSection();
 
 
     lightbox.option({
