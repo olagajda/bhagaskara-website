@@ -165,6 +165,32 @@ var Application = function() {
     function slidingToSection() {
 
         var menu = $(".sticky-menu li");
+        var hexagon = $(".top .hexagon");
+
+        hexagon.on("click", function(event){
+
+            var sectionToScroll = $("section");
+
+            for (var i = 0; i < sectionToScroll.length; i++) {
+
+                if ("advantages" === $(this).data("scroll")) {
+
+
+                    $('html, body').animate({
+                        scrollTop: $(".top").offset().bottom
+                    }, 1000);
+                }
+
+                if (sectionToScroll.eq(i).data("scroll") === $(this).data("scroll")) {
+
+
+                    $('html, body').animate({
+                        scrollTop: sectionToScroll.eq(i).offset().top -50
+                    }, 1000);
+                }
+            }
+        });
+
 
         menu.on("click", function(event){
 
@@ -181,9 +207,6 @@ var Application = function() {
                 }
             }
         });
-
-
-
     }
 
 
