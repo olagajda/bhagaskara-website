@@ -447,6 +447,11 @@ nav {
     margin: .6%;
     margin-bottom: 6%;
     cursor: pointer;
+    &:hover {
+      background-color: $my-purple;
+      color: white;
+      border: none;
+    }
   }
 }
 
@@ -459,6 +464,8 @@ nav {
     position: relative;
     padding-bottom: 83%;
     margin-left: 6%;
+    clear: both;
+
   }
   img {
     position: absolute;

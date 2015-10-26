@@ -1,9 +1,5 @@
 var Application = function() {
 
-    function init() {
-        console.log("init");
-    }
-
 
     function changeImageOnHover() {
 
@@ -102,16 +98,17 @@ var Application = function() {
     function highlightPictureOnHover() {
 
         var photo = $(".photo");
+        var plus = $(".hover-plus");
 
-        photo.on("mouseenter", function(event){
+        photo.hover( function(event){
 
-            $(this).parent().find(".hover-plus").show(0);
+            $(this).next().show(0);
 
         });
 
-        photo.on("mouseleave", function(event){
+        plus.mouseleave(function(event){
 
-            $(this).parent().find(".hover-plus").hide(0);
+           $(this).hide();
 
         });
 
@@ -125,8 +122,55 @@ var Application = function() {
         morePicsButton.on("click", function(event){
 
 
-            $(this).parent().find(".hidden").slideDown(500);
+            $(this).parent().find(".hidden").slideDown(1000);
             $(this).hide();
+
+
+
+        });
+    }
+
+
+    function filterPortfolio() {
+
+        var filterButton = $(".filter-buttons button");
+
+        filterButton.on("click", function(event){
+
+            var example = $(this).parent().parent().find(".example");
+            var hidden = $(this).parents().find(".hidden");
+
+            example.show();
+            hidden.show();
+
+
+
+            for (var i = 0; i < example.length; i++) {
+
+
+                if ($(this).data("filter") === "all") {
+
+                    example.show()
+                }
+
+
+
+
+
+
+                if (example.eq(i).data("filter") !== $(this).data("filter")) {
+
+
+                    example.eq(i).hide();
+
+
+                }
+
+            }
+
+            $(".watch-more").hide()
+
+
 
 
 
@@ -140,36 +184,12 @@ var Application = function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    function scrollPage() {
-        console.log("scrolling");
-    }
-
     return {
-        init:init,
         changeImageOnHover:changeImageOnHover,
         stickyMenu:stickyMenu,
         highlightPictureOnHover:highlightPictureOnHover,
-        showMorePictures:showMorePictures
+        showMorePictures:showMorePictures,
+        filterPortfolio:filterPortfolio
     };
 
 };
@@ -182,11 +202,20 @@ $(function() {
 
 
     var app = new Application();
-    app.init();
     app.changeImageOnHover();
     app.stickyMenu();
     app.highlightPictureOnHover();
     app.showMorePictures();
+    app.filterPortfolio();
+
+
+    lightbox.option({
+
+        "resizeDuration": 400,
+        "fadeDuration": 0,
+        "positionFromTop": 100
+
+    })
 
 
 

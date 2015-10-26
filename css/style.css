@@ -479,6 +479,11 @@ nav li:last-of-type {
   margin-bottom: 6%;
   cursor: pointer;
 }
+.portfolio button:hover {
+  background-color: #9f449b;
+  color: white;
+  border: none;
+}
 
 .gallery .thumbnail {
   background-color: black;
@@ -488,6 +493,7 @@ nav li:last-of-type {
   position: relative;
   padding-bottom: 83%;
   margin-left: 6%;
+  clear: both;
 }
 .gallery img {
   position: absolute;
