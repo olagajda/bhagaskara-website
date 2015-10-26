@@ -153,6 +153,10 @@ nav {
   }
 }
 
+.empty-div {
+  //display: none;
+}
+
 
 .advantages {
 
@@ -603,6 +607,13 @@ nav {
 }
 
 .contact-left {
+  position: relative;
+  p {
+    text-align: left;
+    position: absolute;
+    top: 31%;
+    display: none;
+  }
   padding-right: 2%;
   textarea,
   input {

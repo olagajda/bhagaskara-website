@@ -264,6 +264,30 @@ var Application = function() {
 
     }
 
+    /**
+     * TODO: validate on focus
+     * @param inputText
+     */
+    function validateEmail(inputText) {
+
+        $("#contact-us").submit(function(event) {
+
+            var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            var inputText = $("#input-email").val()
+
+
+            if (inputText.match(mailFormat)) {
+                console.log("Dobry mail");
+                return true;
+            }
+            else {
+                $(this).find("p").show();
+                return false;
+            }
+
+        });
+    };
+
 
 
 
@@ -280,8 +304,8 @@ var Application = function() {
         lightboxInit:lightboxInit,
         teamSlider:teamSlider,
         teamSkillsSlider:teamSkillsSlider,
-        quotesSlider:quotesSlider
-
+        quotesSlider:quotesSlider,
+        validateEmail:validateEmail
 
     };
 
@@ -292,7 +316,6 @@ var Application = function() {
 
 
 $(function() {
-
 
     var app = new Application();
     app.changeImageOnHover();
@@ -305,9 +328,7 @@ $(function() {
     app.teamSlider();
     app.teamSkillsSlider();
     app.quotesSlider();
-
-
-
+    app.validateEmail();
 
 });
 

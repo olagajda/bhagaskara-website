@@ -591,7 +591,14 @@ nav li:last-of-type {
 }
 
 .contact-left {
+  position: relative;
   padding-right: 2%;
+}
+.contact-left p {
+  text-align: left;
+  position: absolute;
+  top: 31%;
+  display: none;
 }
 .contact-left textarea,
 .contact-left input {
