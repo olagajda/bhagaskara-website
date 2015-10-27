@@ -34,6 +34,17 @@
   font-weight: normal;
   font-style: normal;
 }
+@media only screen and (min-device-width: 1000px) {
+  .top .logo {
+    font-size: 100px;
+  }
+
+  .row3,
+  .row4,
+  .row5 {
+    margin-top: 3%;
+  }
+}
 * {
   box-sizing: border-box;
   font-family: "latohairline", sans-serif;
@@ -181,6 +192,7 @@
   margin-right: auto;
   left: 0;
   right: 0;
+  bottom: -30px;
 }
 .hexagon-small img {
   padding-top: 37%;

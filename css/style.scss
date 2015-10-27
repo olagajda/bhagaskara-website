@@ -1,6 +1,8 @@
 @import "fonts";
 @import "variables";
 @import "functions";
+@import "media-queries";
+
 
 
 * {
@@ -120,6 +122,7 @@
   margin-right: auto;
   left: 0;
   right: 0;
+  bottom: -30px;
   img {
     padding-top: 37%;
 
@@ -707,6 +710,8 @@ footer {
   color: $my-purple;
   font-family: "latoregular", sans-serif;
 }
+
+
 
 
 
