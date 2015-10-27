@@ -189,7 +189,7 @@ var Application = function() {
 
 
                     $('html, body').animate({
-                        scrollTop: sectionToScroll.eq(i).offset().top -50
+                        scrollTop: sectionToScroll.eq(i).offset().top
                     }, 1000);
                 }
             }

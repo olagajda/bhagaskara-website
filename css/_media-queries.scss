@@ -1,36 +1,234 @@
 //for wide screens:
 
-@media only screen and (min-device-width: 1000px) {
+
+
+@media only screen and (min-width: 1200px) {
 
   .top .logo {
     font-size: 100px;
   }
 
+  .row2 {
+    h4 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+
   .row3,
   .row4,
   .row5 {
-   margin-top: 3%;
+    padding-top: 3%;
+  }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+
+  .logo-small {
+    width: 33.33%
+  }
+
+  .sticky-menu nav {
+    width: 66.66%;
+    font-size: .88rem;
+  }
+
+  .hexagon-small {
+
+    position: absolute;
+    bottom: 2%;
+
+  }
+
+  .about-us p {
+    line-height: 1.75rem;
+    .corner-right {
+      right: 37%;
+    }
+    .corner-left {
+      left: 39%;
+    }
+  }
+
+  .our-team {
+    .corner-right {
+      right: 40%;
+    }
+    .corner-left {
+      left: 40%;
+    }
+  }
+
+  .portfolio {
+    .corner-right {
+      right: 37%;
+    }
+    .corner-left {
+      left: 37%;
+    }
+  }
+
+  .contact {
+    .corner-right {
+      right: 38%;
+    }
+  }
+
+  .circle {
+    height: 13rem;
+    width: 13rem;
+  }
+
+
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+  .top {
+    .row3,
+    .row4,
+    .row5 {
+      display: none;
+    }
+    .logo {
+      padding-top: 17%;
+
+    }
+  }
+
+  .sticky-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-left: 0;
+    z-index: 2;
+    height: 5%;
+
+    .logo-small {
+
+      display: none;
+
+    }
+    nav {
+
+      width: 100%;
+
+      li {
+        font-size: .8rem;
+        padding: 1.5% 2.5%;
+
+      }
+    }
+  }
+
+  .hexagon-gray {
+    margin-top: 4%;
+  }
+
+  .advantages {
+    padding-bottom: 28%;
+  }
+
+
+
+
+
+
+  .about-us {
+    padding-top: 6%;
+    p {
+      padding-bottom: 3%;
+    }
+  }
+
+  .hexagon-divider {
+
+    margin-bottom: 0;
+
+  }
+
+
+  .about-us {
+    .corner-right {
+      right: 32%;
+    }
+    .corner-left {
+      left: 34%;
+      top: 6%;
+    }
+    img {
+      display: none;
+    }
+    .content {
+      width: 100%;
+    }
+  }
+  button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .our-team {
+    .corner-right {
+      right: 35%;
+    }
+    .corner-left {
+      left: 35%;
+    }
+  }
+
+  .our-skills {
+    .corner-right {
+      right: 35%;
+    }
+    .corner-left {
+      left: 35%;
+    }
+  }
+
+
+  .portfolio {
+    .corner-right {
+      right: 29%;
+    }
+    .corner-left {
+      left: 30%;
+    }
+  }
+
+  .contact {
+    .corner-right {
+      right: 31%;
+    }
+    .corner-left {
+      left: 31%;
+    }
+  }
+
+
+
+
+
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 620px) {
+
+  .advantages p {
+    line-height: 1.2;
+
   }
 
 }
 
-
-@media only screen and (min-device-width: 992px) and (max-device-width: 1200px) {
-
-
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
-
-
-}
-
-@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
-
-
-}
-
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 480px) {
 
 
 }
