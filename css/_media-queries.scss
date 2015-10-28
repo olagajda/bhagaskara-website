@@ -17,18 +17,15 @@
     }
   }
 
-
   .row3,
   .row4,
   .row5 {
     padding-top: 3%;
   }
-
-
 }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
 
+@media only screen and (min-width: 768px) and (max-width: 992px) {
 
   .logo-small {
     width: 33.33%
@@ -40,7 +37,6 @@
   }
 
   .hexagon-small {
-
     position: absolute;
     bottom: 2%;
 
@@ -84,12 +80,10 @@
     height: 13rem;
     width: 13rem;
   }
-
-
-
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+@media only screen and (max-width: 767px) {
 
   .top {
     .row3,
@@ -99,7 +93,6 @@
     }
     .logo {
       padding-top: 17%;
-
     }
   }
 
@@ -110,20 +103,14 @@
     padding-left: 0;
     z-index: 2;
     height: 5%;
-
     .logo-small {
-
       display: none;
-
     }
     nav {
-
       width: 100%;
-
       li {
         font-size: .8rem;
         padding: 1.5% 2.5%;
-
       }
     }
   }
@@ -137,10 +124,6 @@
   }
 
 
-
-
-
-
   .about-us {
     padding-top: 6%;
     p {
@@ -149,11 +132,8 @@
   }
 
   .hexagon-divider {
-
     margin-bottom: 0;
-
   }
-
 
   .about-us {
     .corner-right {
@@ -182,6 +162,14 @@
     .corner-left {
       left: 35%;
     }
+    .arrow {
+      width: 45%;
+    }
+  }
+
+  .circle {
+    height: 8rem;
+    width: 8rem;
   }
 
   .our-skills {
@@ -193,6 +181,9 @@
     }
   }
 
+  .quote p {
+    font-size: 1.3rem;
+  }
 
   .portfolio {
     .corner-right {
@@ -210,25 +201,38 @@
     .corner-left {
       left: 31%;
     }
+
+    .contact-left {
+      width: 95%;
+      #contact-us {
+        width: 90%;
+      }
+    }
+
+    .contact-right {
+      width: 100%;
+    }
+    .contact-right-content {
+      width: 90%;
+      margin-left: 5%;
+    }
   }
 
-
-
-
-
-
+  .divider h3 {
+    font-size: 1.5rem;
+  }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 620px) {
+
+@media only screen and (max-width: 620px) {
 
   .advantages p {
     line-height: 1.2;
-
   }
-
 }
 
-@media only screen and (max-width: 480px) {
+
+@media only screen and (orientation: portrait) and (max-width: 480px) {
 
 
 }

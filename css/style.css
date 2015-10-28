@@ -760,7 +760,7 @@ footer .logo {
     width: 13rem;
   }
 }
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .top .row3,
   .top .row4,
   .top .row5 {
@@ -833,12 +833,24 @@ footer .logo {
   .our-team .corner-left {
     left: 35%;
   }
+  .our-team .arrow {
+    width: 45%;
+  }
+
+  .circle {
+    height: 8rem;
+    width: 8rem;
+  }
 
   .our-skills .corner-right {
     right: 35%;
   }
   .our-skills .corner-left {
     left: 35%;
+  }
+
+  .quote p {
+    font-size: 1.3rem;
   }
 
   .portfolio .corner-right {
@@ -854,8 +866,25 @@ footer .logo {
   .contact .corner-left {
     left: 31%;
   }
+  .contact .contact-left {
+    width: 95%;
+  }
+  .contact .contact-left #contact-us {
+    width: 90%;
+  }
+  .contact .contact-right {
+    width: 100%;
+  }
+  .contact .contact-right-content {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .divider h3 {
+    font-size: 1.5rem;
+  }
 }
-@media only screen and (min-width: 480px) and (max-width: 620px) {
+@media only screen and (max-width: 620px) {
   .advantages p {
     line-height: 1.2;
   }
