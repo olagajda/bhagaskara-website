@@ -3,6 +3,7 @@
 @import "functions";
 
 
+
 body {
   font-size: 15px;
 }
@@ -172,6 +173,22 @@ nav {
   }
 }
 
+/* sticky menu additional styling*/
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+.active {
+  color: $my-purple;
+  font-family: "latoregular", sans-serif;
+}
+
+/* advantages section */
+
 .advantages {
   width: 100%;
   background-color: #eeeeee;
@@ -201,6 +218,9 @@ nav {
   }
 }
 
+
+/* about us section */
+
 .our-title {
   h2 {
     font-family: "existencelight", sans-serif;
@@ -224,8 +244,6 @@ nav {
   }
 
 }
-
-
 
 .about-us {
   padding-top: 13%;
@@ -266,6 +284,8 @@ nav {
   }
 }
 
+/* dividers */
+
 .divider {
   background-image: url("../images/divider1.jpg");
   background-size: 100%;
@@ -291,6 +311,9 @@ nav {
    }
  }
 
+/* our team section with 2 sliders */
+
+
 .our-team {
   padding-top: 10%;
   padding-bottom: 5%;
@@ -306,7 +329,6 @@ nav {
     cursor: pointer;
   }
 }
-
 
 .circle {
   background-color: $my-light-gray;
@@ -353,9 +375,6 @@ nav {
     position: absolute;
     top: 23%;
     right:0;
-
-
-
   }
 }
 
@@ -471,9 +490,7 @@ nav {
   }
 }
 
-
-
-
+/* quotes section */
 
 .quotes {
   padding-top: 12%;
@@ -502,7 +519,6 @@ nav {
     text-align: center;
 
     margin-bottom: 0;
-    //width: 80%;
     font-size: 1.5rem;
     padding: 3% 0;
   }
@@ -511,6 +527,9 @@ nav {
     padding-left: 35%;
   }
 }
+
+
+/* portfolio gallery section */
 
 .portfolio {
   .container {
@@ -557,7 +576,6 @@ nav {
   }
   img {
     position: absolute;
-    //max-width: 100%;
     max-height: 100%;
     top: 0;
     bottom: 0;
@@ -602,9 +620,7 @@ nav {
   display: none;
 }
 
-
-
-
+/* contact section */
 
 .contact {
   .our-title h2 {
@@ -709,24 +725,6 @@ footer {
     margin: 5%;
   }
 }
-
-
-
-.sticky {
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  width: 100%;
-}
-
-.active {
-  color: $my-purple;
-  font-family: "latoregular", sans-serif;
-}
-
-
-
-
 
 @import "media-queries";
 
