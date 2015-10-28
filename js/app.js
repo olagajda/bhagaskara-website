@@ -53,7 +53,6 @@ var Application = function() {
 
             if (menu.hasClass("sticky") === false && (menu.offset().top) < ($(this).scrollTop())) {
 
-
                 lastPositionTop = menu.offset().top;
                 menu.addClass("sticky");
                 emptyStripe.css("height", menuHeight);
@@ -78,7 +77,6 @@ var Application = function() {
                     else {
                         links.eq(index).removeClass("active");
                     }
-
 
                 }
                 else {
@@ -113,9 +111,7 @@ var Application = function() {
         plus.mouseleave(function(event){
 
            $(this).hide();
-
         });
-
     }
 
 
@@ -128,9 +124,6 @@ var Application = function() {
 
             $(this).parent().find(".hidden").fadeIn(1000);
             $(this).hide();
-
-
-
         });
     }
 
@@ -158,7 +151,6 @@ var Application = function() {
                 if (example.eq(i).data("filter") !== $(this).data("filter")) {
 
                     example.eq(i).hide();
-
                 }
             }
             $(".watch-more").hide()
@@ -170,30 +162,37 @@ var Application = function() {
 
         var menu = $(".sticky-menu li");
         var hexagon = $(".top .hexagon");
+        var isAdvantages = 0;
 
         hexagon.on("click", function(event){
 
             var sectionToScroll = $("section");
 
+            //for small hexagon with an arrow
+
+            if ( $(this).data("scroll") === "advantages" ) {
+                isAdvantages = 1;
+
+                $('html, body').animate({
+                    scrollTop: $(".advantages").offset().top - 25
+                }, 1000);
+            }
+
             for (var i = 0; i < sectionToScroll.length; i++) {
 
-                if ("advantages" === $(this).data("scroll")) {
+                // big hexagons
 
-
-                    $('html, body').animate({
-                        scrollTop: $(".top").offset().bottom
-                    }, 1000);
-                }
-
-                if (sectionToScroll.eq(i).data("scroll") === $(this).data("scroll")) {
-
+                if (isAdvantages == 0 && sectionToScroll.eq(i).data("scroll") === $(this).data("scroll")) {
 
                     $('html, body').animate({
                         scrollTop: sectionToScroll.eq(i).offset().top
                     }, 1000);
                 }
             }
+            isAdvantages = 0;
+
         });
+
 
 
         menu.on("click", function(event){
@@ -221,7 +220,6 @@ var Application = function() {
             "resizeDuration": 400,
             "fadeDuration": 0,
             "positionFromTop": 100
-
         });
 
     }
@@ -236,7 +234,6 @@ var Application = function() {
                     prevArrow: $("#arrow-left"),
                     nextArrow: $("#arrow-right"),
                     infnite: true
-
                 });
             }
 
@@ -248,7 +245,6 @@ var Application = function() {
                     prevArrow: $("#arrow-left"),
                     nextArrow: $("#arrow-right"),
                     infnite: true
-
                 });
             }
     }
@@ -261,11 +257,7 @@ var Application = function() {
             prevArrow: $("#arrow-left"),
             nextArrow: $("#arrow-right"),
             infnite: true
-
-
-
         });
-
     }
 
     function quotesSlider() {
@@ -276,9 +268,7 @@ var Application = function() {
             autoplay: true,
             autoplaySpeed: 3000,
             infinite: true
-
         });
-
     }
 
     /**

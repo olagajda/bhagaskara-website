@@ -23,13 +23,11 @@ body {
   min-height: 1px;
 }
 
-
 @for $i from 1 through 12 {
   .col-#{$i} {
     width: col-width($i);
   }
 }
-
 
 .row:before,
 .row:after {
@@ -37,6 +35,8 @@ body {
   display: table;
   clear: both;
 }
+
+/* 3-bars menu for smartphones */
 
 
 .menu-mobile {
@@ -53,7 +53,7 @@ body {
   }
 }
 
-
+/* top section */
 
 .top {
   background-image: url("../images/top-image.jpg");
@@ -63,7 +63,6 @@ body {
   height: 0;
   background-repeat: no-repeat;
   max-height: 100px;
-
 }
 
 .container {
@@ -78,8 +77,6 @@ body {
   font-size: 70px;
   letter-spacing: .01em;
   padding: 2%;
-  cursor: pointer;
-
   span {
     color: $my-purple;
   }
@@ -116,7 +113,6 @@ body {
     padding-top: 25%;
     height: 60%;
 
-
   }
   div {
     margin-left: auto;
@@ -147,6 +143,8 @@ body {
   }
 }
 
+/* menu */
+
 
 .sticky-menu {
   background-color: $my-white;
@@ -173,11 +171,6 @@ nav {
     }
   }
 }
-
-.empty-div {
-  display: none;
-}
-
 
 .advantages {
   width: 100%;
@@ -698,6 +691,7 @@ nav {
     display: inline-block;
     float: left;
     margin: 5% 5.5% 10% 0;
+    cursor: pointer;
     p {
       font-family: $font-regular;
       font-size: 2rem;

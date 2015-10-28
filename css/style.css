@@ -107,6 +107,7 @@ body {
   clear: both;
 }
 
+/* 3-bars menu for smartphones */
 .menu-mobile {
   position: fixed;
   top: 10px;
@@ -121,6 +122,7 @@ body {
   margin: 3px 0;
 }
 
+/* top section */
 .top {
   background-image: url("../images/top-image.jpg");
   background-size: 100%;
@@ -143,7 +145,6 @@ body {
   font-size: 70px;
   letter-spacing: .01em;
   padding: 2%;
-  cursor: pointer;
 }
 .logo span {
   color: #9f449b;
@@ -205,6 +206,7 @@ body {
   padding-top: 37%;
 }
 
+/* menu */
 .sticky-menu {
   background-color: white;
 }
@@ -229,10 +231,6 @@ nav li {
 }
 nav li:last-of-type {
   padding-right: 0;
-}
-
-.empty-div {
-  display: none;
 }
 
 .advantages {
@@ -682,6 +680,7 @@ nav li:last-of-type {
   display: inline-block;
   float: left;
   margin: 5% 5.5% 10% 0;
+  cursor: pointer;
 }
 .contact-right .social p {
   font-family: "latoregular", sans-serif;
