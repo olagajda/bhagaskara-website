@@ -228,16 +228,31 @@ var Application = function() {
 
     function teamSlider() {
 
-        $('.team-people').slick({
+            if ($(window).width() < 480) {
 
-            slidesToShow: 3,
-            prevArrow: $("#arrow-left"),
-            nextArrow: $("#arrow-right"),
-            infnite: true
+                $('.team-people').slick({
 
+                    slidesToShow: 1,
+                    prevArrow: $("#arrow-left"),
+                    nextArrow: $("#arrow-right"),
+                    infnite: true
 
-        });
+                });
+            }
+
+            else {
+
+                $('.team-people').slick({
+
+                    slidesToShow: 3,
+                    prevArrow: $("#arrow-left"),
+                    nextArrow: $("#arrow-right"),
+                    infnite: true
+
+                });
+            }
     }
+
 
     function teamSkillsSlider() {
 
@@ -260,9 +275,7 @@ var Application = function() {
             dots: true,
             autoplay: true,
             autoplaySpeed: 3000,
-
-
-
+            infinite: true
 
         });
 
@@ -292,6 +305,20 @@ var Application = function() {
         });
     };
 
+    function mobileMenu() {
+
+        var mobileMenuButton = $(".menu-mobile");
+        var mobileMenuBar = $(".sticky-menu");
+
+        mobileMenuButton.on("click", function(event){
+
+            mobileMenuBar.toggle();
+
+        });
+
+
+    }
+
 
 
 
@@ -312,6 +339,7 @@ var Application = function() {
         teamSkillsSlider:teamSkillsSlider,
         quotesSlider:quotesSlider,
         validateEmail:validateEmail,
+        mobileMenu:mobileMenu
 
     };
 
@@ -335,6 +363,7 @@ $(function() {
     app.teamSkillsSlider();
     app.quotesSlider();
     app.validateEmail();
+    app.mobileMenu();
 
 });
 

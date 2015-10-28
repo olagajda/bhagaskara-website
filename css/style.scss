@@ -3,7 +3,6 @@
 @import "functions";
 
 
-
 body {
   font-size: 15px;
 }
@@ -38,6 +37,22 @@ body {
   display: table;
   clear: both;
 }
+
+
+.menu-mobile {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 5;
+  display: none;
+  div {
+    height: 5px;
+    width: 20px;
+    background-color: $my-purple;
+    margin: 3px 0;
+  }
+}
+
 
 
 .top {
@@ -714,6 +729,10 @@ footer {
   color: $my-purple;
   font-family: "latoregular", sans-serif;
 }
+
+
+
+
 
 @import "media-queries";
 

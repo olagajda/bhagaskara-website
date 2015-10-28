@@ -107,6 +107,20 @@ body {
   clear: both;
 }
 
+.menu-mobile {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 5;
+  display: none;
+}
+.menu-mobile div {
+  height: 5px;
+  width: 20px;
+  background-color: #9f449b;
+  margin: 3px 0;
+}
+
 .top {
   background-image: url("../images/top-image.jpg");
   background-size: 100%;
@@ -815,7 +829,7 @@ footer .logo {
     left: 34%;
     top: 6%;
   }
-  .about-us img {
+  .about-us .computers {
     display: none;
   }
   .about-us .content {
@@ -887,6 +901,154 @@ footer .logo {
 @media only screen and (max-width: 620px) {
   .advantages p {
     line-height: 1.2;
+  }
+}
+@media only screen and (orientation: portrait) and (max-width: 480px) {
+  .menu-mobile {
+    display: block;
+  }
+
+  .sticky-menu {
+    display: none;
+  }
+
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .row2 h4 {
+    font-size: 1rem;
+  }
+  .row2 p {
+    display: none;
+  }
+
+  .advantages {
+    padding-bottom: 15%;
+  }
+  .advantages p {
+    display: none;
+  }
+  .advantages h5 {
+    font-size: 97%;
+  }
+
+  .our-title h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-us {
+    padding-bottom: 10%;
+  }
+  .about-us .corner-right {
+    right: 26%;
+  }
+  .about-us .corner-left {
+    left: 28%;
+    top: 3%;
+  }
+  .about-us button {
+    height: 30px;
+    width: 35%;
+  }
+
+  .divider h3 {
+    font-size: 1rem;
+  }
+
+  .our-team .corner-right {
+    right: 28%;
+  }
+  .our-team .corner-left {
+    left: 28%;
+    top: 3%;
+  }
+
+  .skill p {
+    top: -7%;
+    font-size: 70%;
+  }
+  .skill h3 {
+    font-size: 60%;
+  }
+
+  .our-skills .corner-right {
+    right: 29%;
+  }
+  .our-skills .corner-left {
+    left: 29%;
+    top: 4%;
+  }
+
+  .quotes h2 {
+    font-size: 1.5rem;
+  }
+  .quotes .circle {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .quote p {
+    font-size: 1rem;
+  }
+  .quote h4 {
+    font-size: .8rem;
+  }
+
+  .portfolio .corner-right {
+    right: 22%;
+  }
+  .portfolio .corner-left {
+    left: 21%;
+    top: 3%;
+  }
+  .portfolio button {
+    width: 50px;
+    font-size: .8rem;
+  }
+  .portfolio .example {
+    width: 50%;
+  }
+  .portfolio h4 {
+    font-size: 1rem;
+  }
+  .portfolio .watch-more {
+    width: 34%;
+    height: auto;
+  }
+
+  .contact {
+    margin-top: 10%;
+  }
+  .contact .corner-right {
+    right: 23%;
+  }
+  .contact .corner-left {
+    left: 23%;
+    top: 13%;
+  }
+  .contact .contact-left input {
+    height: 3rem;
+  }
+  .contact .contact-left textarea {
+    height: 6rem;
+    padding-top: 3%;
+  }
+  .contact .contact-left .submit {
+    width: 34%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sticky-menu {
+    height: 8%;
+    padding-left: 4%;
+    padding-top: 1%;
+  }
+
+  li {
+    padding: 1.5% 5%;
   }
 }
 
