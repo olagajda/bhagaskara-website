@@ -726,6 +726,10 @@ nav {
     float: left;
     margin: 5% 5.5% 10% 0;
     cursor: pointer;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
     p {
       font-family: $font-regular;
       font-size: 2rem;
@@ -741,6 +745,7 @@ footer {
   .logo {
     font-size: 2.5rem;
     margin: 5%;
+    cursor: pointer;
   }
 }
 

@@ -274,10 +274,6 @@ var Application = function() {
         });
     }
 
-    /**
-     * TODO: validate on focus
-     * @param inputText
-     */
     function validateEmail(inputText) {
 
         $("#input-email").focusout(function(event) {
@@ -310,8 +306,16 @@ var Application = function() {
             mobileMenuBar.toggle();
 
         });
+    }
 
+    function logoTakesToTop() {
 
+        $(".logo-bottom").on("click", function(event){
+
+            $('html, body').animate({
+                scrollTop: $(".top").offset().top
+            }, 1500);
+        });
     }
 
 
@@ -334,7 +338,8 @@ var Application = function() {
         teamSkillsSlider:teamSkillsSlider,
         quotesSlider:quotesSlider,
         validateEmail:validateEmail,
-        mobileMenu:mobileMenu
+        mobileMenu:mobileMenu,
+        logoTakesToTop:logoTakesToTop
 
     };
 
@@ -359,6 +364,7 @@ $(function() {
     app.quotesSlider();
     app.validateEmail();
     app.mobileMenu();
+    app.logoTakesToTop();
 
 });
 

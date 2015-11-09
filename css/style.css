@@ -596,6 +596,9 @@ nav {
     float: left;
     margin: 5% 5.5% 10% 0;
     cursor: pointer; }
+    .contact-right .social:hover {
+      background-color: black;
+      color: white; }
     .contact-right .social p {
       font-family: "latoregular", sans-serif;
       font-size: 2rem;
@@ -605,7 +608,8 @@ nav {
 
 footer .logo {
   font-size: 2.5rem;
-  margin: 5%; }
+  margin: 5%;
+  cursor: pointer; }
 
 @media only screen and (min-width: 1200px) {
   .top .logo {
