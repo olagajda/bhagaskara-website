@@ -233,6 +233,7 @@ var Application = function() {
                     slidesToShow: 1,
                     prevArrow: $("#arrow-left"),
                     nextArrow: $("#arrow-right"),
+                    asNavFor: $(".team-skills-slider"),
                     infnite: true
                 });
             }
@@ -244,6 +245,7 @@ var Application = function() {
                     slidesToShow: 3,
                     prevArrow: $("#arrow-left"),
                     nextArrow: $("#arrow-right"),
+                    asNavFor: $(".team-skills-slider"),
                     infnite: true
                 });
             }
@@ -256,6 +258,8 @@ var Application = function() {
 
             prevArrow: $("#arrow-left"),
             nextArrow: $("#arrow-right"),
+            asNavFor: $('.team-people'),
+
             infnite: true
         });
     }
