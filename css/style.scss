@@ -1,4 +1,4 @@
-@import "../../my-website/css/fonts";
+@import "fonts";
 @import "variables";
 @import "functions";
 
@@ -336,7 +336,20 @@ nav {
   height: 14rem;
   width: 14rem;
   margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  clear: both;
+  img {
+    position: absolute;
+    max-height: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
+
 
 .person {
   h3 {
@@ -407,21 +420,21 @@ nav {
   }
   .skill-2 {
     .skill-chart-yes {
-      width: 75%;
+      width: 70%;
       background-color: $my-purple;
       height: 1rem;
     }
   }
   .skill-3 {
     .skill-chart-yes {
-      width: 70%;
+      width: 80%;
       background-color: $my-purple;
       height: 1rem;
     }
   }
   .skill-4 {
     .skill-chart-yes {
-      width: 85%;
+      width: 90%;
       background-color: $my-purple;
       height: 1rem;
     }
@@ -431,28 +444,28 @@ nav {
 .person-2-skills {
   .skill-1 {
     .skill-chart-yes {
-      width: 50%;
+      width: 70%;
       background-color: $my-purple;
       height: 1rem;
     }
   }
   .skill-2 {
     .skill-chart-yes {
-      width: 50%;
+      width: 80%;
       background-color: $my-purple;
       height: 1rem;
     }
   }
   .skill-3 {
     .skill-chart-yes {
-      width: 50%;
+      width: 90%;
       background-color: $my-purple;
       height: 1rem;
     }
   }
   .skill-4 {
     .skill-chart-yes {
-      width: 50%;
+      width: 80%;
       background-color: $my-purple;
       height: 1rem;
     }
@@ -462,28 +475,28 @@ nav {
 .person-3-skills {
   .skill-1 {
     .skill-chart-yes {
-      width: 20%;
+      width: 95%;
       background-color: $my-purple;
       height: 1rem;
     }
   }
   .skill-2 {
     .skill-chart-yes {
-      width: 20%;
+      width: 75%;
       background-color: $my-purple;
       height: 1rem;
     }
   }
   .skill-3 {
     .skill-chart-yes {
-      width: 20%;
+      width: 90%;
       background-color: $my-purple;
       height: 1rem;
     }
   }
   .skill-4 {
     .skill-chart-yes {
-      width: 20%;
+      width: 100%;
       background-color: $my-purple;
       height: 1rem;
     }
@@ -527,6 +540,7 @@ nav {
     padding-left: 35%;
   }
 }
+
 
 
 /* portfolio gallery section */
