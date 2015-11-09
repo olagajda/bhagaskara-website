@@ -385,11 +385,17 @@
 
     }
 
-    .contact-left .submit {
-      width: 34%;
-      height: auto;
-      margin-left: auto;
-      margin-right: auto;
+    .contact-left {
+      .submit {
+        width: 34%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      p {
+        top: 38%;
+        font-size: .8rem;
+      }
     }
   }
 

@@ -259,7 +259,6 @@ var Application = function() {
             prevArrow: $("#arrow-left"),
             nextArrow: $("#arrow-right"),
             asNavFor: $('.team-people'),
-
             infnite: true
         });
     }
@@ -281,10 +280,12 @@ var Application = function() {
      */
     function validateEmail(inputText) {
 
-        $("#contact-us").submit(function(event) {
+        $("#input-email").focusout(function(event) {
+
+            console.log("lost focus");
 
             var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-            var inputText = $("#input-email").val()
+            var inputText = $("#input-email").val();
 
 
             if (inputText.match(mailFormat)) {
@@ -292,12 +293,12 @@ var Application = function() {
                 return true;
             }
             else {
-                $(this).find("p").show();
+                $(".validation").show();
                 return false;
             }
 
         });
-    };
+    }
 
     function mobileMenu() {
 

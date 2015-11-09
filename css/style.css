@@ -850,6 +850,9 @@ footer .logo {
       height: auto;
       margin-left: auto;
       margin-right: auto; }
+    .contact .contact-left p {
+      top: 38%;
+      font-size: .8rem; }
 
   .sticky-menu {
     height: 8%;
