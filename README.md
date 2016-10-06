@@ -1,2 +1,2 @@
 # bhagaskara-website
-A responsive website with an one-page layout
+(Coder's Lab Course) A responsive website with an one-page layout
